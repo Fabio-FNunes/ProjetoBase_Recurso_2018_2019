@@ -19,7 +19,7 @@ public class PesquisaCentrada<T> extends AlgoritmoPesquisa<T> {
         int esq=indiceInicial-1;
         int dir=indiceInicial+1;
 
-        while (esq>0 && dir < elementos.length)
+        while (esq>-1 && dir < elementos.length)
         {
             if (elemento.equals(elementos[esq])) {
                 return esq;
@@ -31,7 +31,7 @@ public class PesquisaCentrada<T> extends AlgoritmoPesquisa<T> {
             dir++;
         }
 
-        while (esq>0)
+        while (esq>-1)
         {
             if (elemento.equals(elementos[esq])) {
                 return esq;
